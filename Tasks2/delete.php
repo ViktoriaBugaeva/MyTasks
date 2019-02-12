@@ -7,5 +7,4 @@ $statement = $pdo->prepare($sql);
 $statement->bindParam(":id", $id);
 $statement->execute();
 
-header('Location: /')
-
+header("Location: http://localhost/MyTasks/Tasks2/");

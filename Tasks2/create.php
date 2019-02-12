@@ -8,18 +8,17 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Create Task</h1>
-                    <from action="store.php" method="post">
-                        <div class="from-group">
-                            <input type="text" class="from-control" name="title">
+                    <form action="store.php" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="title">
                         </div>
-                        <div class="from-group">
-                            <textarea name="content" class="from-control"></textarea>
+                        <div class="form-group">
+                            <textarea name="content" class="form-control"></textarea>
                         </div>
-                        <div class="from-group">
+                        <div class="form-group">
                             <button class="btn btn-success" type="submit">Submit</button>
                         </div>
-                        
-                    </from>
+                    </form>
                 </div>
             </div>
         </div>

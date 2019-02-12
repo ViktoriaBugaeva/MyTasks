@@ -36,8 +36,7 @@ $tasks = $statement->fetchAll(PDO::FETCH_ASSOC);
                                     <a href="edit.php?id=<?= $task['id'];?>" class="btn btn-warning">
                                         Edit
                                     </a>
-                                    <a onclick="return confirm('are you sure?');" href="delete.php?id=<?= $task['id'];?>" class="btn btn-danger">
-                                        Delete</a>
+                                    <a onclick="return confirm('are you sure?');" href="delete.php?id=<?= $task['id'];?>" class="btn btn-danger">Delete</a>
                                 </td>
                             </tr>
                             <?php endforeach;?>

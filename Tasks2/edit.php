@@ -5,7 +5,7 @@ $statement->bindParam(":id", $_GET['id']);
 $statement->execute();
 $task = $statement->fetch(PDO::FETCH_ASSOC);
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,18 +15,18 @@ $task = $statement->fetch(PDO::FETCH_ASSOC);
             <div class="row">
                 <div class="col-md-12">
                     <h1>Edit Task</h1>
-                    <from action="update.php?id=<?= $task['id'];?>" method="post">
-                        <div class="from-group">
-                            <input type="text" name="title" class="from-control" value="<?=$task['title'];?>">
+                    <form action="update.php?id=<?= $task['id'];?>" method="post">
+                        <div class="form-group">
+                            <input type="text" name="title" class="form-control" value="<?= $task['title'];?>">
                         </div>
-                        <div class="from-group">
-                            <textarea name="content" class="from-control"><?= $task['title'];?></textarea>
+                        <div class="form-group">
+                            <textarea name="content" class="form-control"><?= $task['content'];?></textarea>
                         </div>
-                        <div class="from-group">
-                            <button class="btn btn-wraning" type="submit">Submit</button>
+                        <div class="form-group">
+                            <button class="btn btn-warning" type="submit">Submit</button>
                         </div>
                         
-                    </from>
+                    </form>
                 </div>
             </div>
         </div>

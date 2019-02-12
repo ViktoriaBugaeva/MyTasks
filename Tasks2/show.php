@@ -5,7 +5,7 @@ $statement->bindParam(":id", $_GET['id']);
 $statement->execute();
 $task = $statement->fetch(PDO::FETCH_ASSOC);
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,7 +18,7 @@ $task = $statement->fetch(PDO::FETCH_ASSOC);
                     <p>
                         <?= $task['content'];?>
                     </p>
-                    <a href="/">Go Back</a>
+                    <a href="http://localhost/MyTasks/Tasks2/">Go Back</a>
                 </div>
             </div>
         </div>
